@@ -1,9 +1,9 @@
 import Phaser from 'phaser'
 
-class Road extends Phaser.GameObjects.Image{
+class Road extends Phaser.GameObjects.TileSprite{
     constructor(obj){
         let scene = obj.scene 
-        super(scene,400,300,'road')
+        super(scene,400,300,800,600,'road')
 
         this.scene = scene
         this.emitter = obj.emitter 
@@ -13,10 +13,6 @@ class Road extends Phaser.GameObjects.Image{
         this.rightLaneM = 530
         this.leftLaneM  = 270
         this.mid = 397
-        // let rightLaneR = 
-        // let rightLaneL = 
-        // let leftLaneR  = 
-        // let leftLaneL  = 
         this.eventEmitter()
         
     }

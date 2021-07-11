@@ -20,7 +20,7 @@ class Player extends Phaser.Physics.Arcade.Sprite{
 
        this.scene.add.existing(this)
 
-       this.body.setVelocityY(-100)
+       this.body.setVelocityY(-20)
 
        this.eventListener()
     }
